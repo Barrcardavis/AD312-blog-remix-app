@@ -80,6 +80,7 @@ Expected Result: The app navigates back to /posts and shows the full posts list 
 Purpose: Confirms that the Link component correctly navigates back to the posts index.
 
 ⚠️ Edge Test Cases
+
 Edge Case 1 — Invalid Post ID
 Action: Manually enter an invalid URL such as /posts/999.
 
