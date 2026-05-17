@@ -1,87 +1,80 @@
-# Welcome to React Router!
+📘 AD312 Blog Remix App
+A multi‑page blog application built for AD312 using React Router.
+This project demonstrates client‑side routing, dynamic URL parameters, nested layouts, and basic UI styling.
 
-A modern, production-ready template for building full-stack React applications using React Router.
+🚀 Features
+Multi‑page layout using React Router
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Home, About, Posts, and Post Detail pages
 
-## Features
+Dynamic routing for individual blog posts (/posts/:postId)
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Navigation bar with links to all pages
 
-## Getting Started
+Styled layout with a full‑screen background image
 
-### Installation
+Return to Posts button on each post detail page
 
-Install the dependencies:
+Clean, readable UI with a translucent content container
 
-```bash
+📂 Project Structure
+app/
+ ├── routes/
+ │    ├── _index.jsx          → Home page
+ │    ├── about.jsx           → About page
+ │    ├── posts._index.jsx    → Posts list page
+ │    └── posts.$postId.jsx   → Dynamic post detail page
+ ├── root.jsx                 → App layout + navigation
+ └── data/
+      └── posts.js            → Sample post data
+
+🧭 Routing Overview
+| Route | Description |
+| --- | --- |
+| ``/`` | Home page |
+| ``/about`` | About page |
+| ``/posts`` | List of all posts |
+| ``/posts/:postId`` | Dynamic post detail page |
+
+🎨 Styling
+Full‑screen crowd background image
+
+Semi‑transparent white content container for readability
+
+Simple, clean navigation bar
+
+Styled “Return to Posts” button on post detail pages
+
+▶️ Running the App
+Install dependencies:
 npm install
-```
 
-### Development
-
-Start the development server with HMR:
-
-```bash
+Start the development server:
 npm run dev
-```
 
-Your application will be available at `http://localhost:5173`.
+Then open
+http://localhost:5173
 
-## Building for Production
+📹 Assignment Demo
+This project is used for the AD312 assignment requiring:
 
-Create a production build:
+A multi‑page layout
 
-```bash
-npm run build
-```
+Dynamic routing
 
-## Deployment
+Navigation links
 
-### Docker Deployment
+Basic styling
 
-To build and run using Docker:
+A short walkthrough video
 
-```bash
-docker build -t my-app .
+📄 License
+This project is for educational use as part of the AD312 course.
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
 
-The containerized application can be deployed to any platform that supports Docker, including:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
 
-### DIY Deployment
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
-Make sure to deploy the output of `npm run build`
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
 
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
