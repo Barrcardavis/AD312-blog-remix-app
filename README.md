@@ -55,6 +55,51 @@ npm run dev
 Then open
 http://localhost:5173
 
+✅ Test Cases
+Normal Test Cases
+Test Case 1 — Navigate to Posts Page
+Action: Click the Posts link in the navigation bar.
+
+Expected Result: The /posts page loads and displays a list of blog posts.
+
+Purpose: Confirms that the navigation bar and routing to the posts index page work correctly.
+
+Test Case 2 — Open a Post Detail Page
+Action: On the /posts page, click a post title (e.g., “Post 1”).
+
+Expected Result: The app navigates to /posts/1 and displays the correct post title and content.
+
+Purpose: Verifies dynamic routing using URL parameters (postId).
+
+Test Case 3 — Return to Posts List
+Action: On a post detail page, click Return to Posts.
+
+Expected Result: The app navigates back to /posts and shows the full posts list again.
+
+Purpose: Confirms that the Link component correctly navigates back to the posts index.
+
+⚠️ Edge Test Cases
+Edge Case 1 — Invalid Post ID
+Action: Manually enter an invalid URL such as /posts/999.
+
+Expected Result: The app displays “Post not found” and a short message explaining the post does not exist.
+
+Purpose: Ensures the app handles missing or invalid route parameters gracefully.
+
+Edge Case 2 — Direct URL Access
+Action: Refresh the browser while on a post detail page (e.g., /posts/2).
+
+Expected Result: The page reloads correctly and still displays the correct post.
+
+Purpose: Confirms that routing works even when bypassing navigation links.
+
+Edge Case 3 — Navigation Without JavaScript Errors
+Action: Rapidly click between Home, About, and Posts multiple times.
+
+Expected Result: No console errors appear, and all pages load correctly.
+
+Purpose: Ensures stable routing and component rendering under repeated navigation.
+
 📹 Assignment Demo
 This project is used for the AD312 assignment requiring:
 
