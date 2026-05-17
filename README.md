@@ -57,6 +57,7 @@ http://localhost:5173
 
 ✅ Test Cases
 Normal Test Cases
+
 Test Case 1 — Navigate to Posts Page
 Action: Click the Posts link in the navigation bar.
 
